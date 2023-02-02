@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: peachpuff;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-cont {
+    background-color: lightpink;
+    /* height: 300px; */
+    width: 200px;
+    border: 2px black groove;
+    font-size: 1.5rem;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#type {
+    padding-left: 10px;
+}
+
+#search-btn {
+    font-size: 1.25rem;
+    margin: 20px 0;
+    height: 30px;
+    width: 100px;
+}
+
+.query-param {
+    margin: 20px 0;
+}
