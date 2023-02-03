@@ -26,10 +26,6 @@ body {
     justify-content: center;
 }
 
-#type {
-    padding-left: 10px;
-}
-
 #search-btn {
     font-size: 1.25rem;
     margin: 20px 0;
@@ -39,4 +35,8 @@ body {
 
 .query-param {
     margin: 20px 0;
+}
+
+input {
+    padding-left: 10px;
 }

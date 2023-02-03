@@ -8,7 +8,7 @@ const form = document.getElementById('search-form');
 
 
 // SECTION - Event Listeners
-searchBtn.addEventListener('click', addParamsDropDown);
+searchBtn.addEventListener('click', datalistParams);
 
 
 // SECTION - Function Declarations
@@ -35,17 +35,15 @@ function addParamPairs(event) {
     console.log(paramsObj);
 }
 
-function addParamsDropDown(event) {
+function datalistParams(event) {
     event.preventDefault();
     let count = 0;
     document.querySelectorAll('.drop-down').forEach((input) => {
-        if (input.checked) {
-            paramsObj[count] = {
-                key: input.parentNode.id,
-                value: input.value
-            }
-            count += 1;
+        paramsObj[count] = {
+            key: input.id,
+            value: input.value
         }
-    });
+        count += 1;
+    })
     console.log(paramsObj);
 }

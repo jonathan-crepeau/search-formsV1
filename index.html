@@ -11,16 +11,29 @@
 <body>
     <div id="form-cont">
         <form action="" id="search-form">
-            <div form="query-param">
-                <input id="type" class="drop-down" list="types">
+            <div class="query-param">
+                <input type="text" id="type" class="drop-down" list="types">
                 <datalist id="types">
                     <option value="Dog"></option>
                     <option value="Cat"></option>
-                    <option value="Horse"></option>
-                    <option value="Rabbit"></option>
                 </datalist>
             </div>
-
+            <div class="query-param">
+                <input type="text" id="language" class="drop-down" list="languages">
+                <datalist id="languages">
+                    <option value="russian"></option>
+                    <option value="french"></option>
+                </datalist>
+            </div>
+            <div class="query-param">
+                <input type="text" id="name" class="drop-down" list="names">
+                <datalist id="names">
+                    <option value="jonathan"></option>
+                    <option value="jeremy"></option>
+                    <option value="luna"></option>
+                </datalist>
+            </div>
+            <div class="query-param"></div>
             
             <!-- <div class="query-param">
                 <input id="type" list="types">
